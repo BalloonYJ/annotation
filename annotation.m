@@ -8,6 +8,6 @@ function bboxes = annotation(img,frame)
         g = imrect(gca);
         pos = wait(g);
         delete(g);
-        bboxes = [bboxes;frame, -1,pos,-1,-1,-1,-1];
+        bboxes = [bboxes;frame, -1,pos,0.5,-1,-1,-1];
     end
 end
